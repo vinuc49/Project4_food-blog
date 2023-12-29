@@ -18,5 +18,7 @@ class RestaurantAdmin(SummernoteModelAdmin):
     list_filter = ('city', 'county')
     prepopulated_fields = {'restaurant_id': ('name',)}
 
-# Register your models here.
-admin.site.register(Comment)
+@admin.register(Comment)
+class CommentAdmin(SummernoteModelAdmin):
+    list_display = ('post', 'author', 'approved')
+    list_filter = ('author',)
