@@ -7,6 +7,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 class Restaurant(models.Model):
     name = models.CharField(max_length=200, unique=True)
+    description = models.TextField(default=None)
     address1 = models.CharField(max_length=200)
     address2 = models.CharField(max_length=200, null=True, blank=True)
     city = models.CharField(max_length=50)

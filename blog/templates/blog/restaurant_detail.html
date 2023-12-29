@@ -1,14 +1,17 @@
 {% extends 'base.html' %} {% block content %}
 {% load static %}
-
-<div class="masthead">
-  <div class="container">
-    <div class="row g-0">
-      <div class="col-md-6 masthead-text">
-        <!-- Restaurant name goes in these h1 tags -->
-        <h1 class="rest-name">{{ restaurant.name }}</h1>
-      </div>
-    </div>
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">{{ restaurant.name }}</h1>
+    <hr class="my-4">
+    <h3 class="rest-name">Address</h3>
+    <p>{{ restaurant.address1 }}</p>
+    <p>{{ restaurant.address2 }}</p>
+    <p>{{ restaurant.city }}</p>
+    <p>{{ restaurant.county }}</p>
+    <hr class="my-4">
+    <h3 class="rest-name">Contact</h3>
+    <p>Phone : {{ restaurant.phone }}</p>
   </div>
 </div>
 

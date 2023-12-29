@@ -16,6 +16,7 @@ class RestaurantAdmin(SummernoteModelAdmin):
     list_display = ('name', 'city', 'phone', 'created_on')
     search_fields = ['name', 'city']
     list_filter = ('city', 'county')
+    summernote_fields = ('description',)
 
 @admin.register(Comment)
 class CommentAdmin(SummernoteModelAdmin):
