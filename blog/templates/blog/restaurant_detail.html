@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block content %}
+{% load static %}
+
+<div class="masthead">
+  <div class="container">
+    <div class="row g-0">
+      <div class="col-md-6 masthead-text">
+        <!-- Restaurant name goes in these h1 tags -->
+        <h1 class="rest-name">{{ restaurant.name }}</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

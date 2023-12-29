@@ -16,7 +16,6 @@ class RestaurantAdmin(SummernoteModelAdmin):
     list_display = ('name', 'city', 'phone', 'created_on')
     search_fields = ['name', 'city']
     list_filter = ('city', 'county')
-    prepopulated_fields = {'restaurant_id': ('name',)}
 
 @admin.register(Comment)
 class CommentAdmin(SummernoteModelAdmin):

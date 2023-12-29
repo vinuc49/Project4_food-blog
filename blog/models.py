@@ -6,7 +6,6 @@ from cloudinary.models import CloudinaryField
 STATUS = ((0, "Draft"), (1, "Published"))
 
 class Restaurant(models.Model):
-    restaurant_id = models.SlugField(max_length=200, unique=True)
     name = models.CharField(max_length=200, unique=True)
     address1 = models.CharField(max_length=200)
     address2 = models.CharField(max_length=200, null=True, blank=True)
