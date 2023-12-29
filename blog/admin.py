@@ -1,17 +1,22 @@
 from django.contrib import admin
-from .models import Post, Comment
+from .models import Post, Comment, Restaurant
 from django_summernote.admin import SummernoteModelAdmin
 
 
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
-
-    list_display = ('title', 'slug', 'status', 'created_on')
+    list_display = ('title', 'status', 'created_on')
     search_fields = ['title', 'content']
     list_filter = ('status', 'created_on')
     prepopulated_fields = {'slug': ('title',)}
     summernote_fields = ('content',)
 
+@admin.register(Restaurant)
+class RestaurantAdmin(SummernoteModelAdmin):
+    list_display = ('name', 'city', 'phone', 'created_on')
+    search_fields = ['name', 'city']
+    list_filter = ('city', 'county')
+    prepopulated_fields = {'restaurant_id': ('name',)}
 
 # Register your models here.
 admin.site.register(Comment)
