@@ -2,7 +2,9 @@
 {% load static %}
 <div class="container">
   <div class="jumbotron">
-    <h1 class="display-4">{{ restaurant.name }}</h1>
+    <h1 class="display-4"><b>{{ restaurant.name }}</b></h1>
+    <hr class="my-4">
+    <p>{{ restaurant.description | safe }}</p>
     <hr class="my-4">
     <h3 class="rest-name">Address</h3>
     <p>{{ restaurant.address1 }}</p>
