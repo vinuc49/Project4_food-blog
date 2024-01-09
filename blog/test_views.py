@@ -46,3 +46,12 @@ class TestBlogViews(TestCase):
         )
         print(response.content)
         print(response.status_code)
+
+    def test_render_restaurant_detail_page(self):
+        response = self.client.get(reverse(
+            'post_detail', args=['blog-title'],['self.restaurant']))
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b"Blog title", response.content)
+        self.assertIn(b"self.restaurant", response.content)
+        print(response.content)
+        print(response.status_code)
