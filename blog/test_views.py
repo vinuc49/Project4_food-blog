@@ -13,8 +13,11 @@ class TestBlogViews(TestCase):
             password="myPassword23",
             email="test@test.com"
         )
-        self.restaurant = Restaurant(name="XYZ", description="ABCD", address1="cvx", city="def", 
-                                     county="fes", phone="564")
+        self.restaurant = Restaurant(name="Restaurant Name", description="Restaurant Description", 
+                                     address1="address line 1", 
+                                     city="city", 
+                                     county="county", 
+                                     phone="123456")
         self.restaurant.save()
         self.post = Post(title="Blog title", author=self.user,
                          slug="blog-title", excerpt="Blog excerpt",
@@ -44,14 +47,14 @@ class TestBlogViews(TestCase):
             b'Comment submitted and awaiting approval',
             response.content
         )
-        print(response.content)
-        print(response.status_code)
 
     def test_render_restaurant_detail_page(self):
         response = self.client.get(reverse(
-            'post_detail', args=['blog-title'],['self.restaurant']))
+            'restaurant_detail', args=['blog-title', self.restaurant.id]))
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b"Blog title", response.content)
-        self.assertIn(b"self.restaurant", response.content)
-        print(response.content)
-        print(response.status_code)
+        self.assertIn(b"Restaurant Name", response.content)
+        self.assertIn(b"Restaurant Description", response.content)
+        self.assertIn(b"address line 1", response.content)
+        self.assertIn(b"city", response.content)
+        self.assertIn(b"county", response.content)
+        self.assertIn(b"123456", response.content)

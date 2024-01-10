@@ -1,39 +1,123 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+h1 align="center">TastyTales</h1>
+<div align="center"><img src="docs/img/amiresponsive.png"></div>
 
-Welcome,
+Food Blog is a web application built using the Django framework, designed to create an engaging and user-friendly platform for food enthusiasts to share, discover, and interact with a diverse range of recipes. Whether you're a food enthusiast sharing recipes or a home cook looking for new ideas, food blog is the perfect platform to connect and explore the world of flavors. 
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+You can view the live site here - <a href="https://project4-food-blog-5db6aef86fa9.herokuapp.com/" target="_blank" rel="noopener">Food Blog</a>
 
-## Codeanywhere Reminders
+## **[Repository](https://github.com/vinuc49/Project4_food-blog)**
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+## Table of Contents
+- [**User Experience**](#user-experience)
+- [**Features**](#features)
+   - [Existing Features](#existing-features)
+   - [Future Features](#future-features)
+- [**Technical Design**](#technical-design)
+   - [Agile Design](#agile-design)
+   - [Data Model](#data-model)
+   - [Wireframes](#wireframes)
+- [**Technologies Used**](#technologies-used)
+   - [Frameworks & Tools](#frameworks--tools)
+- [**Validation**](#validation)
+   - [Testing](#testing)
+   - [Device Testing](#device-testing)
+   - [Automated Testing](#automated-testing)
+- [**Bugs**](#bugs)
+   - [Solved Bugs](#solved-bugs)
+   - [Remaining Bugs](#remaining-bugs)
+- [**Deployment**](#deployment)
+- [**Credits**](#credits)
 
-`python3 -m http.server`
+# User Experience
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### **User Stories**
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+#### **Site User**
+- As a user I can view a paginated list of recipes so that I can pick one to read
+- As a user I can view a selection of random recipes so that I can pick and read the one I like
+- As a user I can click on a recipe so that I can read the whole recipe
+- As a user I can view the comments on individual recipes so that I can read other user's opinions on recipes
+- As a user I can register for an account so that I can interact with content and post recipes
+- As a user I can view and select a category of recipes so that I can view recipes in category
+- As a user I can search the recipes by keyword so that find relative recipes
+- As a user I can view the number of likes so that I can see which recipe is most popular
+- As a user I can view other people cookbooks so that I can get ideas
 
-`http_server`
+#### **Registered User**
+- As a registered user I can post a comment on a recipe so that I can be involved in the conversation
+- As a registered user I can like/unlike the recipes so that I can interact with the content
+- As a registered user I can login so that I can access my content
+- As a registered user I can logout so that other users cannot access my account
+- As a registered user I can access my profile so that I can edit my details and upload a profile image
+- As a registered user I can delete my comments so that the comments are no longer visible
+- As a registered user I can edit my comments so that I can update my comments
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+#### **Site Admin**
+- As a site admin I can approve/disapprove the comments so that I can decide if the content is relevant
+- As a site admin I can create, read, update, and delete recipes so that I can manage my content
+- As a site admin I can delete or update user's comments so that I can manage my content
+- As a site admin I can delete or update user's cookbooks so that I can manage my content
+- As a site admin I can create draft recipes so that I can finish writing the content later
+- As a site admin I can create, update and delete categories so that I can manage my blog content
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+#### **Testing User Stories**
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
----
+### Agile Methodology
 
-Happy coding!
+- GitHub Projects were uset to create kanban board, and Issues were used to create User Stories and Epics which helped me move through the project and organize tasks. 
+
+- Using GitHub Issues, I was also documenting bugs in order to make sure that they are not forgotten. 
+
+- User Stories were organized in Epics which helped me to build the project section by section. 
+
+- Agile Methodology and GitHub Projects helped me a lot in organizing my own work on this project, but I still very often found myself adjusting and adding User stories.  
+
+Link to GitHub Project can be found [here](https://github.com/vinuc49/Project4_food-blog)
+
+
+[Back to Table Of Contents](#table-of-contents)
+
+# Features
+
+## Existing Features
+
+
+### Nav-bar and Logo
+
+- this feature is present throughout entire project except on a page where user is prompt to define his profile role for using the app, and since the incentive is to pick the role as its vital part of a user functionality of the web app I decided to not incude this feature in this part of the project.
+
+- page logo is also a link to home page. Other than that, navbar consists of links to: Home and Register/Login.
+
+- authenticated user has his username visible on the navbar which is a link to profile page.
+
+- unauthenticated user can see links to Register/Login instead of username.
+
+
+![Nav-bar](/docs/img/nav-bar.png)
+
+### Home Page
+
+- this feature contains the carousel for aesthetis, and top recipes. The Carousel is present throughout the whole project.
+
+- Top recipes are listed based on number of likes. This way users are able to see few best recipes straight away. 
+
+- Users are also able to see recipe card that contains number of likes and comments. 
+
+![Carousel](/docs/features/carousel.png)
+
+![Home Page](/docs/features/top_recipes.png)
+
+### Footer 
+
+- This feature contains a quote from Hungry Chef, Contact information and copyright.
+
+- This feature si present throughout the whole project
+
+![Footer](/docs/features/footer.png)
+
+[Back to top](<#table-of-contents>)
