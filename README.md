@@ -1,5 +1,5 @@
-h1 align="center">TastyTales</h1>
-<div align="center"><img src="docs/img/amiresponsive.png"></div>
+<h1 align="center">Namaste</h1>
+<div align="center"><img src="docs/img/responsive image.png"></div>
 
 Food Blog is a web application built using the Django framework, designed to create an engaging and user-friendly platform for food enthusiasts to share, discover, and interact with a diverse range of recipes. Whether you're a food enthusiast sharing recipes or a home cook looking for new ideas, food blog is the perfect platform to connect and explore the world of flavors. 
 
@@ -7,27 +7,6 @@ Food Blog is a web application built using the Django framework, designed to cre
 You can view the live site here - <a href="https://project4-food-blog-5db6aef86fa9.herokuapp.com/" target="_blank" rel="noopener">Food Blog</a>
 
 ## **[Repository](https://github.com/vinuc49/Project4_food-blog)**
-
-## Table of Contents
-- [**User Experience**](#user-experience)
-- [**Features**](#features)
-   - [Existing Features](#existing-features)
-   - [Future Features](#future-features)
-- [**Technical Design**](#technical-design)
-   - [Agile Design](#agile-design)
-   - [Data Model](#data-model)
-   - [Wireframes](#wireframes)
-- [**Technologies Used**](#technologies-used)
-   - [Frameworks & Tools](#frameworks--tools)
-- [**Validation**](#validation)
-   - [Testing](#testing)
-   - [Device Testing](#device-testing)
-   - [Automated Testing](#automated-testing)
-- [**Bugs**](#bugs)
-   - [Solved Bugs](#solved-bugs)
-   - [Remaining Bugs](#remaining-bugs)
-- [**Deployment**](#deployment)
-- [**Credits**](#credits)
 
 # User Experience
 
@@ -80,8 +59,6 @@ You can view the live site here - <a href="https://project4-food-blog-5db6aef86f
 Link to GitHub Project can be found [here](https://github.com/vinuc49/Project4_food-blog)
 
 
-[Back to Table Of Contents](#table-of-contents)
-
 # Features
 
 ## Existing Features
@@ -108,16 +85,12 @@ Link to GitHub Project can be found [here](https://github.com/vinuc49/Project4_f
 
 - Users are also able to see recipe card that contains number of likes and comments. 
 
-![Carousel](/docs/features/carousel.png)
-
-![Home Page](/docs/features/top_recipes.png)
+![Home Page](/docs/img/home-page.png)
 
 ### Footer 
 
-- This feature contains a quote from Hungry Chef, Contact information and copyright.
+- This feature contains Contact information and copyright.
 
-- This feature si present throughout the whole project
+- This feature present throughout the whole project
 
-![Footer](/docs/features/footer.png)
-
-[Back to top](<#table-of-contents>)
+![Footer](/docs/img/footer.png)
