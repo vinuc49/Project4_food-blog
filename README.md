@@ -98,7 +98,7 @@ Link to GitHub Project can be found [here](https://github.com/vinuc49/Project4_f
 
 ## Full Blog Post Page
 
-![full-post-img](/docs/img/full post.png)
+![full-post-img](/docs/img/full-post.png)
 
 When a user clicks on a link to open a post fully, they are greeted with a fully formatted, traditonal blog post layout. The blog title is displayed in a large header tag at the top of the page, with further information stating the author and when the post was created/last updated.
 
